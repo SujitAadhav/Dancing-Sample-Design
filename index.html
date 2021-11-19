@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iDance - Global Dance Academy</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-list li {
+        list-style: none;
+        margin: 15px;
+    }
+
+    .nav-list li a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .navbar {
+        background-color: black;
+        top: 0;
+        position: sticky;
+        z-index: 1;
+    }
+
+    .background {
+        background-image: url(./img/bg.jpg);
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+
+    .sec-2 {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .big-text {
+        font-size: 73px;
+        text-align: center;
+    }
+
+    .lines {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-small {
+        align-items: center;
+    }
+
+    .services {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .box-main .box-1 {
+        height: 300px;
+        width: 300px;
+        border: 2px solid black;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+    .text-small-sec-3 {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .box-1 img {
+        width: 170px;
+        margin: 5px 5px 5px 59px;
+    }
+
+    .sec-4 {
+        margin-top: 50px;
+        background-color: #dadada;
+    }
+
+    .contact-head {
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .main-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-list {
+        width: 440px;
+        margin: 10px;
+    }
+
+    .contact-list input,
+    textarea {
+        width: 440px;
+        padding: 5px;
+    }
+
+    .footer {
+        height: 45px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-e {
+        color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <nav class="navbar background">
+        <div class="tabs">
+            <ul class="nav-list">
+                <li class="nav-lists"><a href="#home">Home</a></li>
+                <li class="nav-lists"><a href="#">About</a></li>
+                <li class="nav-lists"><a href="#services">Services</a></li>
+                <li class="nav-lists"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="sec-2 background" id="home">
+        <div class="lines">
+
+            <p class="big-text">The Global Dance Academy</p>
+            <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nostrum!</p>
+
+        </div>
+    </section>
+    <section class="sec-3" id="services">
+        <div class="box-main">
+            <div class="box-1">
+                <img src="img/logo.jpg" alt="">
+                <p class="text-small-sec-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+                    natus quam voluptatum atque placeat officiis cupiditate molestiae vero obcaecati! Sed!</p>
+            </div>
+            <div class="box-1">
+                <img src="img/logo.jpg" alt="">
+                <p class="text-small-sec-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+                    natus quam voluptatum atque placeat officiis cupiditate molestiae vero obcaecati! Sed!</p>
+            </div>
+            <div class="box-1">
+                <img src="img/logo.jpg" alt="">
+                <p class="text-small-sec-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+                    natus quam voluptatum atque placeat officiis cupiditate molestiae vero obcaecati! Sed!</p>
+            </div>
+            <div class="box-1">
+                <img src="img/logo.jpg" alt="">
+                <p class="text-small-sec-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+                    natus quam voluptatum atque placeat officiis cupiditate molestiae vero obcaecati! Sed!</p>
+            </div>
+        </div>
+    </section>
+    <section class="sec-4" id="contact">
+        <h2 class="contact-head">Contact Us</h2>
+        <div class="contac-form">
+            <form action="" class="main-contact">
+                <div class="contact-list">
+                    <input type="text" placeholder="Enter your name">
+                </div>
+                <div class="contact-list">
+                    <input type="email" placeholder="Enter your email">
+                </div>
+                <div class="contact-list">
+                    <input type="number" placeholder="Enter your phone">
+                </div>
+                <div class="contact-list">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Elaborate your concern"></textarea>
+                </div>
+                <div class="contact-list">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer-e">All Rights Reserved &copy; 2021</p>
+    </footer>
+</body>
+
+</html>
